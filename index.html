@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Développeur Backend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in;
+    background: linear-gradient(135deg, #77aaff, #ff77aa);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 15s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav {
+    background: #77aaff;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    animation: navFadeIn 2s ease-in;
+}
+
+@keyframes navFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+section {
+    padding: 20px 0;
+}
+
+#about, #skills, #projects, #contact {
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in;
+}
+
+#skills .skill {
+    margin: 20px 0;
+}
+
+#skills .skill h3 {
+    margin: 0 0 10px 0;
+}
+
+#skills .skill-bar {
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#skills .skill-level {
+    height: 20px;
+    background: #77aaff;
+    border-radius: 5px;
+    animation: growSkill 2s ease-in-out;
+}
+
+@keyframes growSkill {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#projects .project {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 10px 0;
+    border: #ccc 1px solid;
+    transition: transform 0.3s ease-in-out;
+}
+
+#projects .project:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+footer p {
+    margin: 0;
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Anzo Ly </h1>
+            <p>Développeur Web Backend</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>Je suis un développeur backend passionné par la création d'applications web robustes et évolutives.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>SQL</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Django</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Flask</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Node.js</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 65%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projets</h2>
+            <div class="project">
+                <h3>Projet 1</h3>
+                <p>Description du projet 1.</p>
+            </div>
+            <div class="project">
+                <h3>Projet 2</h3>
+                <p>Description du projet 2.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: bassirouly221@icloud.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 John Doe. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
